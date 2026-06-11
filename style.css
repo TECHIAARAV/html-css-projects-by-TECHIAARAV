@@ -1,0 +1,494 @@
+body {
+    background-color: black;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 40px 1fr 80px;
+    grid-template-columns: 1fr 10fr 4fr;
+
+    gap: 10px;
+
+    height: 800px;
+    position: fixed;
+    left: 0;
+    right: 0;
+
+
+
+}
+
+.item {}
+
+.header {
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.leftside {
+    background-color: rgb(2, 40, 40);
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 40, 40);
+    position: relative;
+    border-radius: 10px;
+    overflow-y: scroll;
+    height: 660px;
+
+    ;
+
+
+
+}
+
+.rightsidebar {
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+    border-radius: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 70px;
+
+}
+
+.rightflex1 {
+    background-color: rbg(40, 40, 40);
+    width: 350px;
+    height: 1000px;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+.rightheader {
+    background-color: rgb(40, 40, 40);
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 58px;
+    right: 0px;
+    width: 379px;
+    height: 60px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+
+
+
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+    padding-top: 20px;
+
+}
+
+.logo {
+    width: 30px;
+    margin-left: 20px;
+    margin-right: 100px;
+
+
+
+
+
+}
+
+.a {
+    color: grey;
+    font-size: x-large;
+    font-weight: 100;
+    margin-left: 30px;
+
+
+}
+
+.homelogo {
+    width: 20px;
+    height: 25px;
+    margin-left: 180px;
+    color: whitesmoke;
+
+
+}
+
+.searchdiv {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(40, 40, 40);
+    height: 40px;
+    width: 450px;
+    justify-content: start;
+    align-items: center;
+    border-radius: 110px;
+    margin-left: 10px;
+    padding-left: 20px;
+
+
+
+}
+
+.searchbox {
+    background-color: rgb(40, 40, 40);
+    border-style: solid;
+    border-color: rgb(40, 40, 40);
+    height: 40px;
+    width: 250px;
+
+
+}
+
+.searchicon {
+    height: 20px;
+    width: 20px;
+    margin-right: 20px;
+
+}
+
+.searchbox::placeholder {
+    color: rgb(206, 201, 201);
+    font-family: arial;
+    font-size: larger;
+
+}
+
+.slash {
+    color: rgb(206, 201, 201);
+    font-size: x-large;
+    margin-left: 80px;
+}
+
+.siuu {
+    width: 20px;
+    margin-left: 30px;
+
+}
+
+.bell {
+    height: 20px;
+    width: 20px;
+    margin-left: 250px;
+
+}
+
+.friend {
+    height: 20px;
+    width: 20px;
+    margin-left: 20px;
+}
+
+.profilepic {
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    margin-left: 10px;
+    object-fit: cover;
+}
+
+.leftsidebar {
+    background-color: rgb(40, 40, 40);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.libsvg {
+    width: 25px;
+    height: 25px;
+
+
+
+}
+
+.plussvg {
+    width: 25px;
+    height: 25px;
+    margin-top: 20px;
+
+}
+
+.artist {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-top: 15px;
+    object-fit: cover;
+
+}
+
+.artist:hover {
+    cursor: pointer;
+
+}
+
+.hidesvg {
+    height: 20px;
+    width: 30px;
+    margin-left: 10px;
+
+}
+
+.headerpara {
+    color: white;
+    width: 200px;
+    height: 20px;
+    font-family: arial;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: medium;
+    margin-left: 10px;
+}
+
+.rightthreedot {
+    height: 18px;
+    width: 30px;
+    margin-left: 70px;
+}
+
+.rightexpandarrow {
+    height: 20px;
+    width: 30px;
+    margin-left: 10px;
+
+}
+
+img:hover {
+    cursor: pointer;
+
+}
+
+.song1 {
+    height: 350px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.song1des {
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+    font-size: x-large;
+    margin-top: 4px;
+
+
+
+}
+
+.song1singer {
+    color: rgb(162, 159, 159);
+    font-family: arial;
+    font-size: large;
+    margin-top: -20px;
+}
+
+.b {
+    height: 20px;
+    width: 30px;
+    margin-left: 150px;
+    margin-top: 10px;
+
+}
+
+.c {
+    height: 20px;
+    width: 30px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
+.aboutdiv {
+    position: flex;
+    background-color: rgb(59, 57, 57);
+    flex-direction: column;
+    position: relative;
+    height: 420px;
+    border-radius: 20px;
+
+    width: 350px;
+    margin-top: 20px;
+
+}
+
+.singerpic2 {
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    display: block;
+
+}
+
+.aboutheader {
+    position: absolute;
+
+    top: 15px;
+
+    left: 15px;
+
+    margin: 0;
+
+    z-index: 2;
+
+    color: white;
+    font-family: arial;
+    font-weight: 600;
+    font-size: 16px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.rightflex {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(59, 57, 57);
+    margin-top: 20px;
+    border-radius: 20px;
+    height: 140px;
+    width: 350px;
+}
+
+.div2 {
+
+    width: 300px;
+    padding-left: 20px;
+    border-radius: 20px;
+
+}
+
+.div2:hover {
+    background-color: rgb(87, 86, 86);
+
+}
+
+button:hover {
+    cursor: pointer;
+    border-style: dotted;
+}
+
+.playdiv {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.playpausediv1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    width: 440px;
+    height: 45px;
+    margin-left: 330px;
+    margin-top: -10px;
+
+
+}
+
+.playpausediv2 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+    width: 600px;
+    height: 40px;
+    margin-left: 250px;
+    padding-left: 30px;
+    margin-top: 10px;
+}
+
+.playpausediv3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+
+    height: 50px;
+    width: 300px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    padding-left: 100px;
+}
+
+.rightdivimages {
+    height: 20px;
+    width: 20px;
+    margin-left: 30px;
+
+}
+
+.centerheader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(40, 40, 40);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+
+    left: px;
+    width: 100%;
+    height: 60px;
+
+    padding-left: 30px;
+
+
+}
+
+.episodesdiv {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: start;
+    height: 220px;
+    width: 1800px;
+    flex-shrink: 0;
+
+
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 210px;
+    width: 180px;
+    padding-top: 5px;
+    margin-top: 2px;
+    margin-left: 20px;
+    border-radius: 10px;
+    background-color: rgb(68, 70, 70);
+}
+
+.card1:hover {
+    background-color: rgb(90, 88, 88);
+
+}
